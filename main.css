@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  background-color: #dddddd;
+}
+
+ul {
+  text-align: left;
+	display: inline-block;
+}
+
+li {
+  padding: 3px;
+}
+
+button {
+  margin-left: 3px;
+}
+
+.add {
+  color: white;
+  background-color: #b3d0d7;
+  border-color: #b3d0d7;
+}
+
+.delete {
+  color: white;
+  background-color: #f7c6bd;
+  border-color: #f7c6db;
+}

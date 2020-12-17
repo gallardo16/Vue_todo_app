@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TODO App</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="app">
+    <h1>{{title}}</h1>
+      <input v-model="newTodo">
+      <button @click="addTodo" class="add">追加</button>
+    <p>
+      <ul>
+        <li v-for="(todo, idx) in todos" :key="todo">{{ todo }}
+          <button @click="removeTodo(idx)" class="delete">削除</button>
+        </li>
+      </ul>
+    </p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
